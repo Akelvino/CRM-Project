@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Sigup{% endblock  %}
+
+{% block content %}
+<h1 class="text-2xl">Sign Up</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    {{ form.errors }}
+    <input type="submit" value="Submit" class="py-4 px-8 bg-teal-500 rounded-xl cursor-pointer text-white font-bold">
+</form>
+
+{% endblock content %}
