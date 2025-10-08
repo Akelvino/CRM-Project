@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div>
+        <nav class="bg-teal-500 p-6 text-white flex justify-between">
+          <a href="/" class=" text-2xl">Teal CRM</a>
+          <div class="mx-2">
+            <a href="" class="bg-teal-600 rounded-xl px-6 py-4 mx-2">Log in</a>
+            <a href="" class="bg-teal-300 rounded-xl px-6 py-4">Log Out</a>
+          </div>
+        </nav>
+    </div>
+    {% block content %}
+    {% endblock content %}
+  </body>
+</html>
